@@ -18,7 +18,7 @@ for (i = 0; i < close.length; i++) {
     div.style.display = "none";
   }
 }
-
+function setUpPage() {
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
@@ -26,7 +26,7 @@ list.addEventListener('click', function(ev) {
     ev.target.classList.toggle('checked');
   }
 }, false);
-
+}
 // Create a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
@@ -34,7 +34,7 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("Please enter a to do item");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
