@@ -286,3 +286,120 @@ body {
   .addBtn:hover {
     background-color: #bbb;
   }
+
+  .settings {
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .setting1 {
+ 
+    background-color: grey;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:white;border-radius:0px; width: 0%;  height: 36px; }
+  
+    100% {background-color:grey; border-radius:0px;width: 100%; height: 36px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:white;border-radius:0px; width: 0%;  height: 36px; }
+  
+    100% {background-color:grey; border-radius:0px;width: 100%; height: 36px;}
+}
+.setting2 {
+
+    background-color: white;
+    position: relative;
+    width: 0%;
+    height: 0%;
+    -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+    0%   {background-color: white;border-radius:0px; width: 0%;  height: 36px; }
+  
+    100% {background-color:grey; border-radius:0px;width: 100%; height: 36px;}
+}
+
+/* Standard syntax */
+@keyframes example2 {
+    0%   {background-color:white;border-radius:0px; width: 0%;  height: 36px; }
+  
+    100% {background-color:grey; border-radius:0px;width: 100%; height: 36px;}
+}
+
+.size11 {
+    font-size: 1.5em;
+}
+.size10 {
+    font-size: 1.4em;
+}
+.size9 {
+    font-size: 1.3em;
+}
+.size8 {
+    font-size: 1.2em;
+}
+.size7 {
+    font-size: 1.1em;
+}
+.size6 {
+    font-size: 1.0em;
+}
+.size5 {
+    font-size: 0.8em;
+}
+.size4 {
+    font-size: 0.7em;
+}
+.size3 {
+    font-size: 0.6em;
+}
+.size2 {
+    font-size: 0.5em;
+}
+.size1 {
+    font-size: 0.4em;
+}
+.chTm {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.container {
+    margin-left: 150px;
+    width: 12%;
+    background-color: #ddd;
+  }
+  
+  .skills {
+    text-align: right;
+    padding: 0px;
+    color: white;
+  }
+  .bar11 {width: 100%; background-color: rgb(57, 147, 199);}
+  .bar10 {width: 90%; background-color: rgb(57, 147, 199);}
+  .bar9 {width: 80%; background-color: rgb(57, 147, 199);}
+  .bar8 {width: 70%; background-color: rgb(57, 147, 199);}
+  .bar7 {width: 60%; background-color: rgb(57, 147, 199);}
+  .bar6 {width: 50%; background-color: rgb(57, 147, 199);}
+  .bar5 {width: 40%; background-color: rgb(57, 147, 199);}
+  .bar4 {width: 30%; background-color: rgb(57, 147, 199);}
+  .bar3 {width: 20%; background-color: rgb(57, 147, 199);}
+  .bar2 {width: 10%; background-color: rgb(57, 147, 199);}
+  .bar1 {width: 0%; background-color: rgb(57, 147, 199);}

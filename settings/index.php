@@ -8,17 +8,17 @@
     <meta name="keywords" content="to do, work, tracker, list">
     <meta name="author" content="David Baldwin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css" />
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="..//stylesheets/stylesheet.css" />
+    <script src="../scripts/script.js"></script>
 </head>
 
-<body onload="setUpPage();">
+<body onload="setUpPage(); loadSettings();">
     <div class="header">
     </div>
 
     <ul class="headerList">
-        <li class="fleft"><a href="index.php">Home</a></li>
-        <li onclick="settings();" class="fleft"><a href="settings/index.php">Settings</a></li>
+        <li class="fleft"><a href="../index.php">Home</a></li>
+        <li onclick="settings();" class="fleft"><a href="#index.php">Settings</a></li>
         <li class="fleft"><a href="#news">New List</a></li>
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">My List</a>
@@ -29,6 +29,16 @@
           </div>
         </li>
       </ul>
+
+      <div id="settings" class="settings col-12 col-s-12" >
+      <div class="container">
+  <div id="fSize" class="bar6 skills" >50%</div>
+</div>
+                <span>Change Font Size</span><button id="btnTh" class="chTm"  onclick="fontChange();"style="width:45px" ><small>A</small>A -</button>
+                <button id="btnTh2" class="chTm" onclick="fontChange2();" style="width:45px"><small>A</small>A +</button>
+                <span>Change Theme</span><button id="btnTh3" class="chTm"  onclick="themeChange();" style="width:95px" >Light Theme</button>
+                <button id="btnTh4" class="chTm" onclick="themeChange2();" style="width:95px">Dark Theme</button><br/>
+      </div>
       
       <div class="row">
       
@@ -54,8 +64,8 @@
       </div>
       
       <div class="col-3 col-s-12">
-        <div id="menu2" class="aside">
-          <h2 id="t2">What?</h2>
+        <div  id="menu2" class="aside">
+          <h2 id="t2" class="normal">What?</h2>
           <p>Statement 1.</p>
           <h2>Where?</h2>
           <p>Statement 2.</p>
