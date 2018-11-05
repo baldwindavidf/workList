@@ -17,7 +17,8 @@
     </div>
 
     <ul class="headerList">
-        <li class="fleft"><a href="#home">Home</a></li>
+        <li class="fleft"><a href="index.php">Home</a></li>
+        <li class="fleft"><a href="#settings">Settings</a></li>
         <li class="fleft"><a href="#news">New List</a></li>
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">My List</a>
