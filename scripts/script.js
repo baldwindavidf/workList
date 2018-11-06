@@ -97,49 +97,59 @@ function fontChange() {
   var x = document.getElementById("fSize");
   var item1 = document.getElementById("menu1");
   var item2 = document.getElementById("menu2");
+  var item9 = document.getElementById("menu4");
   if (x.innerHTML == "100%") {
     item1.className = "col-3 col-s-3 menu size10";
     item2.className = "aside size10";
+    item9.className = "col-6 col-s-9 size10";
     x.innerHTML = "90%";
     x.className = "bar10 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
   else if (x.innerHTML == "90%") {
     item1.className = "col-3 col-s-3 menu size9";
     item2.className = "aside size9";
+    item9.className = "col-6 col-s-9 size9";
     x.innerHTML = "80%";
     x.className = "bar9 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
   else if (x.innerHTML == "80%") {
     item1.className = "col-3 col-s-3 menu size8";
     item2.className = "aside size8";
+    item9.className = "col-6 col-s-9 size8";
     x.innerHTML = "70%";
     x.className = "bar8 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
     }
   else if (x.innerHTML == "70%") {
     item1.className = "col-3 col-s-3 menu size7";
     item2.className = "aside size7";
+    item9.className = "col-6 col-s-9 size7";
     x.innerHTML = "60%";
     x.className = "bar7 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
   else if (x.innerHTML == "60%") {
     item1.className = "col-3 col-s-3 menu size6";
     item2.className = "aside size6";
+    item9.className = "col-6 col-s-9 size6";
     x.innerHTML = "50%";
     x.className = "bar6 skills";
     var item1 = x.className;
@@ -147,161 +157,193 @@ function fontChange() {
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
     }
   else if (x.innerHTML == "50%") {
     item1.className = "col-3 col-s-3 menu size5";
     item2.className = "aside size5";
+    item9.className = "col-6 col-s-9 size5";
     x.innerHTML = "40%";
     x.className = "bar5 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
   else if (x.innerHTML == "40%") {
     item1.className = "col-3 col-s-3 menu size4";
     item2.className = "aside size4";
+    item9.className = "col-6 col-s-9 size4";
     x.innerHTML = "30%";
     x.className = "bar4 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
     }
   else if (x.innerHTML == "30%") {
     item1.className = "col-3 col-s-3 menu size3";
     item2.className = "aside size3";
+    item9.className = "col-6 col-s-9 size3";
     x.innerHTML = "20%";
     x.className = "bar3 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
   else if (x.innerHTML == "20%") {
     item1.className = "col-3 col-s-3 menu size2";
     item2.className = "aside size2";
+    item9.className = "col-6 col-s-9 size2";
     x.innerHTML = "10%";
     x.className = "bar2 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
  else if (x.innerHTML == "10%") {
     item1.className = "col-3 col-s-3 menu size1";
     item2.className = "aside size1";
+    item9.className = "col-6 col-s-9 size1";
     x.innerHTML = "0%";
     x.className = "bar1 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
 }
 function fontChange2() {
   var x = document.getElementById("fSize");
   var item1 = document.getElementById("menu1");
   var item2 = document.getElementById("menu2");
+  var item9 = document.getElementById("menu4");
   if (x.innerHTML == "90%") {
     item1.className = "col-3 col-s-3 menu size11";
     item2.className = "aside size11";
+    item9.className = "col-6 col-s-9 size11";
     x.innerHTML = "100%";
     x.className = "bar11 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
     }
   else if (x.innerHTML == "80%") {
     item1.className = "col-3 col-s-3 menu size10";
     item2.className = "aside size10";
+    item9.className = "col-6 col-s-9 size10";
     x.innerHTML = "90%";
     x.className = "bar10 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
  else if (x.innerHTML == "70%") {
     item1.className = "col-3 col-s-3 menu size9";
     item2.className = "aside size9";
+    item9.className = "col-6 col-s-9 size9";
     x.innerHTML = "80%";
     x.className = "bar9 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
     }
   else if (x.innerHTML == "60%") {
     item1.className = "col-3 col-s-3 menu size8";
     item2.className = "aside size8";
+    item9.className = "col-6 col-s-9 size8";
     x.innerHTML = "70%";
     x.className = "bar8 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
   else if (x.innerHTML == "50%") {
     item1.className = "col-3 col-s-3 menu size7";
     item2.className = "aside size7";
+    item9.className = "col-6 col-s-9 size7";
     x.innerHTML = "60%";
     x.className = "bar7 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
     }
   else  if (x.innerHTML == "40%") {
     item1.className = "col-3 col-s-3 menu size6";
     item2.className = "aside size6";
+    item9.className = "col-6 col-s-9 size6";
     x.innerHTML = "50%";
     x.className = "bar6 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
  else if (x.innerHTML == "30%") {
     item1.className = "col-3 col-s-3 menu size5";
     item2.className = "aside size5";
+    item9.className = "col-6 col-s-9 size5";
     x.innerHTML = "40%";
     x.className = "bar5 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
     }
  else if (x.innerHTML == "20%") {
     item1.className = "col-3 col-s-3 menu size4";
     item2.className = "aside size4";
+    item9.className = "col-6 col-s-9 size4";
     x.innerHTML = "30%";
     x.className = "bar4 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
  else if (x.innerHTML == "10%") {
     item1.className = "col-3 col-s-3 menu size3";
     item2.className = "aside size3";
+    item9.className = "col-6 col-s-9 size3";
     x.innerHTML = "20%";
     x.className = "bar3 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
 else if (x.innerHTML == "0%") {
     item1.className = "col-3 col-s-3 menu size2";
     item2.className = "aside size2";
+    item9.className = "col-6 col-s-9 size2";
     x.innerHTML = "10%";
     x.className = "bar2 skills";
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
     localStorage.setItem("items4", JSON.stringify(x.className));
+    localStorage.setItem("items9", JSON.stringify(item9.className));
   }
 }
 
@@ -310,18 +352,22 @@ var data1;
 var data2;
 var data3;
 var data4;
+var data9;
   data1 = JSON.parse(localStorage.getItem('items1'));
   data2 = JSON.parse(localStorage.getItem('items2'));
   data3 = JSON.parse(localStorage.getItem('items3'));
   data4 = JSON.parse(localStorage.getItem('items4'));
+  data9 = JSON.parse(localStorage.getItem('items9'));
   if (data1 != null && data2 != null) {
   var x = document.getElementById("fSize");
   var item1 = document.getElementById("menu1");
   var item2 = document.getElementById("menu2");
+  var item4 = document.getElementById("menu4");
   item1.className = data1;
   item2.className = data2;
   x.innerHTML = data3;
   x.className = data4;
+  item4.className = data9;
   }
 }
 function loadTheme() {

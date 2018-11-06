@@ -54,8 +54,8 @@
         </ul>
       </div>
       
-      <div class="col-6 col-s-9">
-        <div id="myDIV" class="header2">
+      <div id="menu4" class="col-6 col-s-9">
+        <div  class="header2">
           <h2 style="margin:5px">LIST 1</h2>
           <input type="text" id="myInput" placeholder="Enter items">
           <span onclick="newElement()" class="addBtn">Add</span>
@@ -64,6 +64,7 @@
         <ul id="myUL">
       
         </ul>
+       
       </div>
       
       <div class="col-3 col-s-12">
