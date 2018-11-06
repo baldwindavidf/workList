@@ -18,7 +18,7 @@
 
     <ul class="headerList">
         <li class="fleft"><a href="index.php">Home</a></li>
-        <li onclick="settings();" class="fleft"><a href="#">Settings</a></li>
+        <li  class="fleft"><a id="btnSet" onclick="settings();" href="#">Settings</a></li>
         <li class="fleft"><a href="#news">New List</a></li>
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">My List</a>
@@ -30,17 +30,17 @@
         </li>
       </ul>
 
-      <div id="settings" class="settings col-12 col-s-12" >
-      <div class="container">
-  <div id="fSize" class="bar6 skills" >50%</div>
+      <div style="display:none;" id="settings" class="settings col-12 col-s-12" >
+      <div  class="container">
+  <div style="display:none;" id="fSize" class="bar6 skills" >50%</div>
 </div><br/>
-                <span id="txt1">Change Font Size</span>
-                <button id="btnTh" class="chTm"  onclick="fontChange();"style="width:45px" ><small>A</small>A -</button>
-                <button id="btnTh2" class="chTm" onclick="fontChange2();" style="width:45px"><small>A</small>A +</button><br/><br/>
-                <span id="txt2">Change Theme</span>
-                <button id="btnTh3" class="chTm"  onclick="themeChange();" style="width:135px; margin-left:37px;" >Light Theme</button><br/>
-                <button id="btnTh4" class="chTm"  onclick="themeChange1();" style="width:135px; margin-left:152px;" >Standard Theme</button><br/>
-                <button id="btnTh5" class="chTm" onclick="themeChange2();" style="width:135px; margin-left:152px;">Dark Theme</button><br/>
+                <span style="display:none;" id="txt1">Change Font Size</span>
+                <button style="display:none;" id="btnTh" class="chTm"  onclick="fontChange();"style="width:45px" ><small>A</small>A -</button>
+                <button style="display:none;" id="btnTh2" class="chTm" onclick="fontChange2();" style="width:45px"><small>A</small>A +</button><br/><br/>
+                <span style="display:none;" id="txt2">Change Theme</>
+                <button style="display:none;" id="btnTh3" class="chTm"  onclick="themeChange();" style="width:135px; margin-left:37px;" >Light Theme</button><br/>
+                <button style="display:none;" id="btnTh4" class="chTm"  onclick="themeChange1();" style="width:135px; margin-left:152px;" >Standard Theme</button><br/>
+                <button style="display:none;" id="btnTh5" class="chTm" onclick="themeChange2();" style="width:135px; margin-left:152px;">Dark Theme</button><br/>
       </div>
       
       <div class="row">

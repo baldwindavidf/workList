@@ -64,8 +64,8 @@ function themeChange() {
   var item6 = document.getElementById("txt1");
   var item7 = document.getElementById("txt2");
   item5.style.backgroundColor = "#ccc";
-  item6.style.color = "black";
-  item7.style.color = "black";
+  item6.style.color = "white";
+  item7.style.color = "white";
   localStorage.setItem("items5", JSON.stringify(item5.style.backgroundColor));
   localStorage.setItem("items6", JSON.stringify(item6.style.color));
   localStorage.setItem("items7", JSON.stringify(item7.style.color));
@@ -75,8 +75,8 @@ function themeChange1() {
   var item6 = document.getElementById("txt1");
   var item7 = document.getElementById("txt2");
   item5.style.backgroundColor = "slategray";
-  item6.style.color = "black";
-  item7.style.color = "black";
+  item6.style.color = "white";
+  item7.style.color = "white";
   localStorage.setItem("items5", JSON.stringify(item5.style.backgroundColor));
   localStorage.setItem("items6", JSON.stringify(item6.style.color));
   localStorage.setItem("items7", JSON.stringify(item7.style.color));
@@ -394,21 +394,68 @@ if (data7 != null) {
 function settings() {
   if (document.getElementById("btnSet").innerHTML == "Settings")
   {
-  document.getElementById("settings").className = "setting1";
-  document.getElementById("btnSet").innerHTML = "Close"
+  document.getElementById("btnSet").innerHTML = "Close";
+  document.getElementById("settings").className = "setting1";  
   window.setTimeout(function() {
-  document.getElementById("btnTh").style.display = "block";}, 400);
+  document.getElementById("settings").style.display = "block"
+  }, 000);
   window.setTimeout(function() {
-  document.getElementById("btnTh2").style.display = "block";}, 400);
-  
+  document.getElementById("fSize").style.display = "inline"
+  }, 1700);
+  window.setTimeout(function() {
+  document.getElementById("txt1").style.display = "inline"
+  }, 1700);
+  window.setTimeout(function() {
+  document.getElementById("txt2").style.display = "inline"
+  }, 1700);
+  window.setTimeout(function() {
+  document.getElementById("btnTh").style.display = "inline"
+  }, 1700);
+  window.setTimeout(function() {
+  document.getElementById("btnTh2").style.display = "inline"
+  }, 1700);
+  window.setTimeout(function() {
+  document.getElementById("btnTh3").style.display = "inline"
+  }, 1700);
+  window.setTimeout(function() {
+  document.getElementById("btnTh4").style.display = "inline"
+  }, 1700);
+  window.setTimeout(function() {
+  document.getElementById("btnTh5").style.display = "inline"
+  }, 1700);
+
   }
   else
   {
+  document.getElementById("btnSet").innerHTML = "Settings";
   document.getElementById("settings").className = "setting2";
-  document.getElementById("btnSet").innerHTML = "Settings"
   window.setTimeout(function() {
-  document.getElementById("btnTh").style.display = "none";}, 1600);
+  document.getElementById("settings").style.display = "none"
+  }, 2000);
   window.setTimeout(function() {
-  document.getElementById("btnTh2").style.display = "none";}, 1600);
+  document.getElementById("fSize").style.display = "none"
+  }, 200);
+  window.setTimeout(function() {
+  document.getElementById("txt1").style.display = "none"
+  }, 200);
+  window.setTimeout(function() {
+  document.getElementById("txt2").style.display = "none"
+  }, 200);
+  window.setTimeout(function() {
+  document.getElementById("btnTh").style.display = "none"
+  }, 200);
+  window.setTimeout(function() {
+  document.getElementById("btnTh2").style.display = "none"
+  }, 200);
+  window.setTimeout(function() {
+  document.getElementById("btnTh3").style.display = "none"
+  }, 200);
+  window.setTimeout(function() {
+  document.getElementById("btnTh4").style.display = "none"
+  }, 200);
+  window.setTimeout(function() {
+  document.getElementById("btnTh5").style.display = "none"
+  }, 200);
+
   }
 }
