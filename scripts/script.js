@@ -60,29 +60,37 @@ function newElement() {
   }
 }
 function themeChange() {
-  if (document.getElementById("btnTh").innerHTML == "Dark Theme")
-  {
-  document.getElementById("th1").style.color = "white";
-  document.getElementById("t2").style.color = "white";
-  document.getElementById("t3").style.color = "white";
-  document.getElementById("t4").style.color = "white";
-  document.getElementById("t5").style.color = "white";
-  document.getElementById("t6").style.color = "white";
-  document.getElementById("bd1").style.backgroundColor = "#333333";
-  document.getElementById("btnTh").innerHTML = "Light Theme";
-  }
-  else
-  {
-  document.getElementById("th1").style.color = "black";
-  document.getElementById("t2").style.color = "black";
-  document.getElementById("t3").style.color = "black";
-  document.getElementById("t4").style.color = "black";
-  document.getElementById("t5").style.color = "black";
-  document.getElementById("t6").style.color = "black";
-  document.getElementById("bd1").style.backgroundColor = "#eeeeee";
-  document.getElementById("btnTh").innerHTML = "Dark Theme";
-  }
-
+  var item5 = document.getElementById("bd1");
+  var item6 = document.getElementById("txt1");
+  var item7 = document.getElementById("txt2");
+  item5.style.backgroundColor = "#ccc";
+  item6.style.color = "black";
+  item7.style.color = "black";
+  localStorage.setItem("items5", JSON.stringify(item5.style.backgroundColor));
+  localStorage.setItem("items6", JSON.stringify(item6.style.color));
+  localStorage.setItem("items7", JSON.stringify(item7.style.color));
+}
+function themeChange1() {
+  var item5 = document.getElementById("bd1");
+  var item6 = document.getElementById("txt1");
+  var item7 = document.getElementById("txt2");
+  item5.style.backgroundColor = "slategray";
+  item6.style.color = "black";
+  item7.style.color = "black";
+  localStorage.setItem("items5", JSON.stringify(item5.style.backgroundColor));
+  localStorage.setItem("items6", JSON.stringify(item6.style.color));
+  localStorage.setItem("items7", JSON.stringify(item7.style.color));
+}
+function themeChange2() {
+  var item5 = document.getElementById("bd1");
+  var item6 = document.getElementById("txt1");
+  var item7 = document.getElementById("txt2");
+  item5.style.backgroundColor = "#444";
+  item6.style.color = "white";
+  item7.style.color = "white";
+  localStorage.setItem("items5", JSON.stringify(item5.style.backgroundColor));
+  localStorage.setItem("items6", JSON.stringify(item6.style.color));
+  localStorage.setItem("items7", JSON.stringify(item7.style.color));
 }
 
 function fontChange() {
@@ -306,10 +314,6 @@ var data4;
   data2 = JSON.parse(localStorage.getItem('items2'));
   data3 = JSON.parse(localStorage.getItem('items3'));
   data4 = JSON.parse(localStorage.getItem('items4'));
-  console.log(data1);
-  console.log(data2);
-  console.log(data3);
-  console.log(data4);
   if (data1 != null && data2 != null) {
   var x = document.getElementById("fSize");
   var item1 = document.getElementById("menu1");
@@ -319,9 +323,27 @@ var data4;
   x.innerHTML = data3;
   x.className = data4;
   }
-
 }
-
+function loadTheme() {
+  var data5;
+  data5 = JSON.parse(localStorage.getItem('items5'));
+  if (data5 != null) {
+    var item5 = document.getElementById("bd1");
+    item5.style.backgroundColor = data5;
+}
+var data6;
+data6 = JSON.parse(localStorage.getItem('items6'));
+if (data6 != null) {
+  var item6 = document.getElementById("txt1");
+  item6.style.color = data6;
+}
+var data7;
+data7 = JSON.parse(localStorage.getItem('items7'));
+if (data7 != null) {
+  var item7 = document.getElementById("txt2");
+  item7.style.color = data7;
+}
+}
 
 function settings() {
   if (document.getElementById("btnSet").innerHTML == "Settings")

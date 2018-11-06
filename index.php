@@ -12,7 +12,7 @@
     <script src="scripts/script.js"></script>
 </head>
 
-<body onload="setUpPage(); loadSettings();">
+<body id="bd1" onload="setUpPage(); loadSettings(); loadTheme();">
     <div class="header">
     </div>
 
@@ -33,21 +33,24 @@
       <div id="settings" class="settings col-12 col-s-12" >
       <div class="container">
   <div id="fSize" class="bar6 skills" >50%</div>
-</div>
-                <span>Change Font Size</span><button id="btnTh" class="chTm"  onclick="fontChange();"style="width:45px" ><small>A</small>A -</button>
-                <button id="btnTh2" class="chTm" onclick="fontChange2();" style="width:45px"><small>A</small>A +</button>
-                <span>Change Theme</span><button id="btnTh3" class="chTm"  onclick="themeChange();" style="width:95px" >Light Theme</button>
-                <button id="btnTh4" class="chTm" onclick="themeChange2();" style="width:95px">Dark Theme</button><br/>
+</div><br/>
+                <span id="txt1">Change Font Size</span>
+                <button id="btnTh" class="chTm"  onclick="fontChange();"style="width:45px" ><small>A</small>A -</button>
+                <button id="btnTh2" class="chTm" onclick="fontChange2();" style="width:45px"><small>A</small>A +</button><br/><br/>
+                <span id="txt2">Change Theme</span>
+                <button id="btnTh3" class="chTm"  onclick="themeChange();" style="width:135px; margin-left:37px;" >Light Theme</button><br/>
+                <button id="btnTh4" class="chTm"  onclick="themeChange1();" style="width:135px; margin-left:152px;" >Standard Theme</button><br/>
+                <button id="btnTh5" class="chTm" onclick="themeChange2();" style="width:135px; margin-left:152px;">Dark Theme</button><br/>
       </div>
       
       <div class="row">
       
       <div id="menu1" class="col-3 col-s-3 menu">
         <ul>
-          <li>Tab 1</li>
-          <li>Tab 2</li>
-          <li>Tab 3</li>
-          <li>Tab 4</li>
+          <li class="uList1">Tab 1</li>
+          <li class="uList1">Tab 2</li>
+          <li class="uList1">Tab 3</li>
+          <li class="uList1">Tab 4</li>
         </ul>
       </div>
       
