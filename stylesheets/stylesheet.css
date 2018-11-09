@@ -151,9 +151,7 @@ body {
   }
   
   /* Include the padding and border in an element's total width and height */
-  * {
-    box-sizing: border-box;
-  }
+
   
   /* Remove margins and padding from the list */
   #myUL {
@@ -428,7 +426,4 @@ body {
   }
   #txt2 {
     margin-left:50px;
-  }
-  #fSize {
-      width:50%;
   }
