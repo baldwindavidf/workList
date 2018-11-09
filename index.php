@@ -34,10 +34,10 @@
       <div  class="container">
   <div style="display:none;" id="fSize" class="bar6 skills" >50%</div>
 </div><br/>
-                <span style="display:none; margin-right:50 px;" id="txt1">Change Font Size</span>
+                <span style="display:none;" id="txt1">Change Font Size</span>
                 <button style="display:none;" id="btnTh" class="chTm"  onclick="fontChange();"style="width:45px" ><small>A</small>A -</button>
                 <button style="display:none;" id="btnTh2" class="chTm" onclick="fontChange2();" style="width:45px"><small>A</small>A +</button><br/><br/>
-                <span style="display:none; margin-right:50 px;" id="txt2">Change Theme</>
+                <span style="display:none;" id="txt2">Change Theme</>
                 <button style="display:none;" id="btnTh3" class="chTm"  onclick="themeChange();" style="width:135px; margin-left:37px;" >Light Theme</button><br/>
                 <button style="display:none;" id="btnTh4" class="chTm"  onclick="themeChange1();" style="width:135px; margin-left:152px;" >Standard Theme</button><br/>
                 <button style="display:none;" id="btnTh5" class="chTm" onclick="themeChange2();" style="width:135px; margin-left:152px;">Dark Theme</button><br/>
