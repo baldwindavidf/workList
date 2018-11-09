@@ -31,16 +31,16 @@
       </ul>
 
       <div style="display:none;" id="settings" class="settings col-12 col-s-12" >
-      <div  class="container">
-  <div style="display:none;" id="fSize" class="bar6 skills" style="width:130px; margin-left:205px;" >50%</div>
+      <div id="contain" style="display:none;" class="container" >
+  <div style="display:none;" id="fSize" class="bar6 skills" >50%</div>
 </div><br/>
                 <span style="display:none;" id="txt1">Change Font Size</span>
-                <button style="display:none;" id="btnTh" class="chTm"  onclick="fontChange();"style="width:45px" ><small>A</small>A -</button>
-                <button style="display:none;" id="btnTh2" class="chTm" onclick="fontChange2();" style="width:45px"><small>A</small>A +</button><br/><br/>
+                <button style="display:none;" id="btnTh" class="chTm"  onclick="fontChange();"><small>A</small>A -</button>
+                <button style="display:none;" id="btnTh2" class="chTm" onclick="fontChange2();"><small>A</small>A +</button><br/><br/>
                 <span style="display:none;" id="txt2">Change Theme</span>
-                <button style="display:none;" id="btnTh3" class="chTm"  onclick="themeChange();" style="width:135px; margin-left:37px;" >Light Theme</button><br/>
-                <button style="display:none;" id="btnTh4" class="chTm"  onclick="themeChange1();" style="width:135px; margin-left:202px;" >Standard Theme</button><br/>
-                <button style="display:none;" id="btnTh5" class="chTm" onclick="themeChange2();" style="width:135px; margin-left:202px;">Dark Theme</button><br/>
+                <button style="display:none;" id="btnTh3" class="chTm"  onclick="themeChange();">Light Theme</button><br/>
+                <button style="display:none;" id="btnTh4" class="chTm"  onclick="themeChange1();">Standard Theme</button><br/>
+                <button style="display:none;" id="btnTh5" class="chTm" onclick="themeChange2();">Dark Theme</button><br/>
       </div>
       
       <div class="row">

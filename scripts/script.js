@@ -396,32 +396,35 @@ function settings() {
   document.getElementById("btnSet").innerHTML = "Close";
   document.getElementById("settings").className = "setting1 settings col-12 col-s-12";  
   window.setTimeout(function() {
-  document.getElementById("settings").style.display = "block";
+  document.getElementById("settings").style.display = "inline";
   }, 0);
   window.setTimeout(function() {
-  document.getElementById("fSize").style.display = "inline";
-  }, 1700);
+  document.getElementById("contain").style.display = "block";
+  }, 700);
+  window.setTimeout(function() {
+    document.getElementById("fSize").style.display = "block";
+    }, 700);
   window.setTimeout(function() {
   document.getElementById("txt1").style.display = "inline";
-  }, 1700);
+  }, 700);
   window.setTimeout(function() {
   document.getElementById("txt2").style.display = "inline";
-  }, 1700);
+  }, 700);
   window.setTimeout(function() {
   document.getElementById("btnTh").style.display = "inline";
-  }, 1700);
+  }, 700);
   window.setTimeout(function() {
   document.getElementById("btnTh2").style.display = "inline";
-  }, 1700);
+  }, 700);
   window.setTimeout(function() {
   document.getElementById("btnTh3").style.display = "inline";
-  }, 1700);
+  }, 700);
   window.setTimeout(function() {
   document.getElementById("btnTh4").style.display = "inline";
-  }, 1700);
+  }, 700);
   window.setTimeout(function() {
   document.getElementById("btnTh5").style.display = "inline";
-  }, 1700);
+  }, 700);
 
   }
   else
@@ -430,10 +433,13 @@ function settings() {
   document.getElementById("settings").className = "setting2 settings col-12 col-s-12";
   window.setTimeout(function() {
   document.getElementById("settings").style.display = "none";
-  }, 2000);
+  }, 970);
   window.setTimeout(function() {
-  document.getElementById("fSize").style.display = "none";
+  document.getElementById("contain").style.display = "none";
   }, 200);
+  window.setTimeout(function() {
+    document.getElementById("contain").style.display = "none";
+    }, 200);
   window.setTimeout(function() {
   document.getElementById("txt1").style.display = "none";
   }, 200);
