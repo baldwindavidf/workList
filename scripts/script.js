@@ -396,13 +396,13 @@ function settings() {
   document.getElementById("btnSet").innerHTML = "Close";
   document.getElementById("settings").className = "setting1 settings col-12 col-s-12";  
   window.setTimeout(function() {
-  document.getElementById("settings").style.display = "inline";
+  document.getElementById("settings").style.display = "block";
   }, 0);
   window.setTimeout(function() {
   document.getElementById("contain").style.display = "block";
   }, 700);
   window.setTimeout(function() {
-    document.getElementById("fSize").style.display = "inline";
+    document.getElementById("fSize").style.display = "block";
     }, 700);
   window.setTimeout(function() {
   document.getElementById("txt1").style.display = "inline";

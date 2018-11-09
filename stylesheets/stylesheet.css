@@ -295,7 +295,7 @@ body {
     background-color: #3f5c66;
     position: relative;
     width: 100%px;
-    height: 160px;
+    height: 190px;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
     -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
@@ -308,14 +308,14 @@ body {
 @-webkit-keyframes example {
     0%   {background-color:white; width: 100%;  height: 0px; }
   
-    100% {background-color:#3f5c66; width: 100%; height: 160px;}
+    100% {background-color:#3f5c66; width: 100%; height: 190px;}
 }
 
 /* Standard syntax */
 @keyframes example {
     0%   {background-color:white; width: 100%;  height: 0px; }
   
-    100% {background-color:#3f5c66; width: 100%; height: 160px;}
+    100% {background-color:#3f5c66; width: 100%; height: 190px;}
 }
 .setting2 {
 
@@ -335,14 +335,14 @@ body {
 @-webkit-keyframes example2 {
     0%   {background-color: white; width: 100%;  height: 0px; }
   
-    100% {background-color:#3f5c66; width: 100%; height: 160px;}
+    100% {background-color:#3f5c66; width: 100%; height: 190px;}
 }
 
 /* Standard syntax */
 @keyframes example2 {
     0%   {background-color:white; width: 100%;  height: 0px; }
   
-    100% {background-color:#3f5c66; width: 100%; height: 160px;}
+    100% {background-color:#3f5c66; width: 100%; height: 190px;}
 }
 
 .size11 {
