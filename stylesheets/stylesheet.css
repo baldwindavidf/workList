@@ -392,6 +392,7 @@ body {
     padding: 0px;
     color: white;
   }
+
   .bar11 {width: 100%; background-color: rgb(57, 147, 199);}
   .bar10 {width: 90%; background-color: rgb(57, 147, 199);}
   .bar9 {width: 80%; background-color: rgb(57, 147, 199);}
@@ -427,4 +428,7 @@ body {
   }
   #txt2 {
     margin-left:50px;
+  }
+  #fSize {
+      width:50%;
   }
