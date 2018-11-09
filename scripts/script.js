@@ -152,7 +152,6 @@ function fontChange() {
     item9.className = "col-6 col-s-9 size6";
     x.innerHTML = "50%";
     x.className = "bar6 skills";
-    var item1 = x.className;
     localStorage.setItem("items1", JSON.stringify(item1.className));
     localStorage.setItem("items2", JSON.stringify(item2.className));
     localStorage.setItem("items3", JSON.stringify(x.innerHTML));
