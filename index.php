@@ -32,7 +32,7 @@
 
       <div style="display:none;" id="settings" class="settings col-12 col-s-12" >
       <div  class="container">
-  <div style="display:none;" id="fSize" class="bar6 skills" >50%</div>
+  <div style="display:none;" id="fSize" class="bar6 skills" style="width:130px; margin-left:205px;" >50%</div>
 </div><br/>
                 <span style="display:none;" id="txt1">Change Font Size</span>
                 <button style="display:none;" id="btnTh" class="chTm"  onclick="fontChange();"style="width:45px" ><small>A</small>A -</button>

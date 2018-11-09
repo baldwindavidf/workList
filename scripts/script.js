@@ -394,7 +394,7 @@ function settings() {
   if (document.getElementById("btnSet").innerHTML == "Settings")
   {
   document.getElementById("btnSet").innerHTML = "Close";
-  document.getElementById("settings").className = "setting1";  
+  document.getElementById("settings").className = "setting1 settings col-12 col-s-12";  
   window.setTimeout(function() {
   document.getElementById("settings").style.display = "block";
   }, 0);
@@ -427,7 +427,7 @@ function settings() {
   else
   {
   document.getElementById("btnSet").innerHTML = "Settings";
-  document.getElementById("settings").className = "setting2";
+  document.getElementById("settings").className = "setting2 settings col-12 col-s-12";
   window.setTimeout(function() {
   document.getElementById("settings").style.display = "none";
   }, 2000);
