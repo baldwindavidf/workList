@@ -396,7 +396,7 @@ function settings() {
   document.getElementById("btnSet").innerHTML = "Close";
   document.getElementById("settings").className = "setting1 settings col-12 col-s-12";  
   window.setTimeout(function() {
-  document.getElementById("settings").style.display = "block";
+  document.getElementById("settings").style.display = "inline";
   }, 0);
   window.setTimeout(function() {
   document.getElementById("contain").style.display = "block";
