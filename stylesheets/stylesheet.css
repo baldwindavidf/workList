@@ -405,10 +405,10 @@ body {
   .bar1 {width: 0%; background-color: rgb(57, 147, 199);}
 
   #btnTh {
-    width:45px
+    width:45px;
   }
   #btnTh2 {
-    width:45px
+    width:45px;
   }
   #btnTh3 {
     width:135px;
