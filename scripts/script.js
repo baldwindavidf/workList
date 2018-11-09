@@ -433,12 +433,12 @@ function settings() {
   document.getElementById("settings").className = "setting2 settings col-12 col-s-12";
   window.setTimeout(function() {
   document.getElementById("settings").style.display = "none";
-  }, 990);
+  }, 1000);
   window.setTimeout(function() {
   document.getElementById("contain").style.display = "none";
   }, 200);
   window.setTimeout(function() {
-    document.getElementById("contain").style.display = "none";
+    document.getElementById("fSize").style.display = "none";
     }, 200);
   window.setTimeout(function() {
   document.getElementById("txt1").style.display = "none";
