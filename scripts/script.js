@@ -402,7 +402,7 @@ function settings() {
   document.getElementById("contain").style.display = "block";
   }, 700);
   window.setTimeout(function() {
-    document.getElementById("fSize").style.display = "block";
+    document.getElementById("fSize").style.display = "inline";
     }, 700);
   window.setTimeout(function() {
   document.getElementById("txt1").style.display = "inline";
