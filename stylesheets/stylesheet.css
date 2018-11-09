@@ -301,7 +301,7 @@ body {
     animation-name: example;
     animation-duration: 2s;
     animation-iteration-count: 1;
-    animation-direction: forwards;
+    animation-direction:normal;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
@@ -328,7 +328,7 @@ body {
     animation-name: example2;
     animation-duration: 2s;
     animation-iteration-count: 1;
-    animation-direction: reverse;
+    animation-direction:reverse;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example2 {

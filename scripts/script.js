@@ -7,7 +7,7 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
-  }
+  };
 }
 function setUpPage() {
 
@@ -25,7 +25,7 @@ for (i = 8; i < myNodelist.length - 8; i++) {
 
 // Add a "checked" symbol when clicking on a list item
 //var list = document.querySelector('ul');
-var list = document.getElementById('myUL')
+var list = document.getElementById('myUL');
 list.addEventListener('click', function(ev) {
  if (ev.target.tagName === 'LI') {
    ev.target.classList.toggle('checked');
@@ -56,7 +56,7 @@ function newElement() {
     close[i].onclick = function() {
       var div = this.parentElement;
       div.style.display = "none";
-    }
+    };
   }
 }
 function themeChange() {
@@ -396,31 +396,31 @@ function settings() {
   document.getElementById("btnSet").innerHTML = "Close";
   document.getElementById("settings").className = "setting1";  
   window.setTimeout(function() {
-  document.getElementById("settings").style.display = "block"
-  }, 000);
+  document.getElementById("settings").style.display = "block";
+  }, 0);
   window.setTimeout(function() {
-  document.getElementById("fSize").style.display = "inline"
+  document.getElementById("fSize").style.display = "inline";
   }, 1700);
   window.setTimeout(function() {
-  document.getElementById("txt1").style.display = "inline"
+  document.getElementById("txt1").style.display = "inline";
   }, 1700);
   window.setTimeout(function() {
-  document.getElementById("txt2").style.display = "inline"
+  document.getElementById("txt2").style.display = "inline";
   }, 1700);
   window.setTimeout(function() {
-  document.getElementById("btnTh").style.display = "inline"
+  document.getElementById("btnTh").style.display = "inline";
   }, 1700);
   window.setTimeout(function() {
-  document.getElementById("btnTh2").style.display = "inline"
+  document.getElementById("btnTh2").style.display = "inline";
   }, 1700);
   window.setTimeout(function() {
-  document.getElementById("btnTh3").style.display = "inline"
+  document.getElementById("btnTh3").style.display = "inline";
   }, 1700);
   window.setTimeout(function() {
-  document.getElementById("btnTh4").style.display = "inline"
+  document.getElementById("btnTh4").style.display = "inline";
   }, 1700);
   window.setTimeout(function() {
-  document.getElementById("btnTh5").style.display = "inline"
+  document.getElementById("btnTh5").style.display = "inline";
   }, 1700);
 
   }
@@ -429,31 +429,31 @@ function settings() {
   document.getElementById("btnSet").innerHTML = "Settings";
   document.getElementById("settings").className = "setting2";
   window.setTimeout(function() {
-  document.getElementById("settings").style.display = "none"
+  document.getElementById("settings").style.display = "none";
   }, 2000);
   window.setTimeout(function() {
-  document.getElementById("fSize").style.display = "none"
+  document.getElementById("fSize").style.display = "none";
   }, 200);
   window.setTimeout(function() {
-  document.getElementById("txt1").style.display = "none"
+  document.getElementById("txt1").style.display = "none";
   }, 200);
   window.setTimeout(function() {
-  document.getElementById("txt2").style.display = "none"
+  document.getElementById("txt2").style.display = "none";
   }, 200);
   window.setTimeout(function() {
-  document.getElementById("btnTh").style.display = "none"
+  document.getElementById("btnTh").style.display = "none";
   }, 200);
   window.setTimeout(function() {
-  document.getElementById("btnTh2").style.display = "none"
+  document.getElementById("btnTh2").style.display = "none";
   }, 200);
   window.setTimeout(function() {
-  document.getElementById("btnTh3").style.display = "none"
+  document.getElementById("btnTh3").style.display = "none";
   }, 200);
   window.setTimeout(function() {
-  document.getElementById("btnTh4").style.display = "none"
+  document.getElementById("btnTh4").style.display = "none";
   }, 200);
   window.setTimeout(function() {
-  document.getElementById("btnTh5").style.display = "none"
+  document.getElementById("btnTh5").style.display = "none";
   }, 200);
 
   }

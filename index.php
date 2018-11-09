@@ -58,7 +58,7 @@
         <div  class="header2">
           <h2 style="margin:5px">LIST 1</h2>
           <input type="text" id="myInput" placeholder="Enter items">
-          <span onclick="newElement()" class="addBtn">Add</span>
+          <span onclick="newElement();" class="addBtn">Add</span>
         </div>
         
         <ul id="myUL">
