@@ -1,3 +1,16 @@
+<?php    
+if(isset($_POST['SubmitButton'])){ //check if form was submitted
+  if(!empty($_POST['message'])) {
+    $file = 'log.txt';
+    $data = $_POST['message'].",\n";
+    $messageSuccess = "Success! You entered: ".$data;
+    // using the FILE_APPEND flag to append the content to the end of the file
+    // and the LOCK_EX flag to prevent anyone else writing to the file at the same time
+    file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
+}
+}    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css" />
     <script src="scripts/script.js"></script>
+    <script src="scripts/ajax.js"></script>
 </head>
 
 <body id="bd1" onload="setUpPage(); loadSettings(); loadTheme();">
@@ -57,14 +71,16 @@
       <div id="menu4" class="col-6 col-s-9">
         <div  class="header2">
           <h2 style="margin:5px">LIST 1</h2>
-          <input type="text" id="myInput" placeholder="Enter items">
-          <span onclick="newElement();" class="addBtn">Add</span>
+          <form action="#" method="POST">
+          <input name="message" type="text" id="myInput" placeholder="Enter items">
+          <input value="Add" type="submit" name="SubmitButton" class="addBtn"/>
+          </form>
+          <?php echo $messageSuccess; ?>
         </div>
         
         <ul id="myUL">
-      
         </ul>
-       
+
       </div>
       
       <div class="col-3 col-s-12">
@@ -77,12 +93,15 @@
           <p>Statement 3.</p>
         </div>
       </div>
-      
       </div>
-      
+           
       <div class="footer">
             <small>Copyright © 2018 <a class="emailLink" href="mailto:daveandjaneen@gmail.com">David Baldwin</a></small>
       </div>
-      
+      <button onclick="getPhpData();">Get Data</button>
+      <p id="text5">j</p>
+
 </body>
 </html>
+
+
