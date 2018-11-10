@@ -465,14 +465,8 @@ function loading() {
              if (this.readyState == 4 && this.status == 200) {
             
              var data = this.responseText;    
-             var strArray = data.split(",");
              newElement(data);
-             document.getElementById("text5").innerHTML = " ";
-              
-             for(var i = 0; i < strArray.length; i++){
-              document.getElementById("text5").innerHTML += strArray[i] + "<br/>";   
-             }
-  
+           
              }
              };
              xhttp.open("GET", "log.txt", true);
