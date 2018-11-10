@@ -23,10 +23,9 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css" />
     <script src="scripts/script.js"></script>
-    <script src="scripts/ajax.js"></script>
 </head>
 
-<body id="bd1" onload="setUpPage(); loadSettings(); loadTheme();">
+<body id="bd1" onload="setUpPage(); loadSettings(); loadTheme(); loading();">
     <div class="header">
     </div>
 
@@ -71,11 +70,11 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
       <div id="menu4" class="col-6 col-s-9">
         <div  class="header2">
           <h2 style="margin:5px">LIST 1</h2>
-          <form action="#" method="POST">
+          <form id="myForm" action="#" method="POST">
           <input name="message" type="text" id="myInput" placeholder="Enter items">
           <input value="Add" type="submit" name="SubmitButton" class="addBtn"/>
           </form>
-          <?php echo $messageSuccess; ?>
+
         </div>
         
         <ul id="myUL">
@@ -99,8 +98,7 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
             <small>Copyright © 2018 <a class="emailLink" href="mailto:daveandjaneen@gmail.com">David Baldwin</a></small>
       </div>
 
-      <button onclick="getPhpData();">Get Data</button>
-      <p id="text5"></p>
+      <div style="display:none;" id="text5"></div>
 
 </body>
 </html>
