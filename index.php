@@ -1,4 +1,4 @@
-<?php    
+<?php 
 if(isset($_POST['SubmitButton'])){ //check if form was submitted
   if(!empty($_POST['message'])) {
     $file = 'log.txt';
@@ -8,7 +8,7 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
     // and the LOCK_EX flag to prevent anyone else writing to the file at the same time
     file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
 }
-}    
+}
 ?>
 
 <!DOCTYPE html>
@@ -98,8 +98,9 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
       <div class="footer">
             <small>Copyright © 2018 <a class="emailLink" href="mailto:daveandjaneen@gmail.com">David Baldwin</a></small>
       </div>
+
       <button onclick="getPhpData();">Get Data</button>
-      <p id="text5">j</p>
+      <p id="text5"></p>
 
 </body>
 </html>

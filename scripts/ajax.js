@@ -22,10 +22,10 @@ function getPhpData() {
 
            var data = this.responseText;    
            var strArray = data.split(",");
-           var element5 = document.getElementById("text5").innerHTML;
+           document.getElementById("text5").innerHTML = " ";
             
            for(var i = 0; i < strArray.length; i++){
-           element5 = strArray[i] + "<br/>";   
+            document.getElementById("text5").innerHTML += strArray[i] + "<br/>";   
            }
 
            }
