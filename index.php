@@ -6,6 +6,8 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
     // using the FILE_APPEND flag to append the content to the end of the file
     // and the LOCK_EX flag to prevent anyone else writing to the file at the same time
     file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
+    header("Location:index.php");
+        exit;
 }
 }
 if(isset($_POST['SubmitButton2'])){
@@ -13,6 +15,8 @@ $f=fopen('log.txt','w');
 $data = $_POST['message2'];
 fwrite($f,$data);
 fclose($f);
+header("Location:index.php");
+        exit;
 }
 ?>
 
@@ -28,6 +32,7 @@ fclose($f);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css" />
     <script src="scripts/script.js"></script>
+
 </head>
 
 <body id="bd1" onload="setUpPage(); loadSettings(); loadTheme(); loading();">
@@ -76,11 +81,11 @@ fclose($f);
         <div  class="header2">
           <h2 style="margin:5px">LIST 1</h2>
           
-          <form id="myForm" action="#" method="POST">
+          <form id="myForm" action="index.php" method="POST">
           <input name="message" type="text" id="myInput" placeholder="Enter items">
           <input value="Add" type="submit" name="SubmitButton" class="addBtn"/>
           </form>
-          <form id="myForm2" action="#" method="POST">
+          <form id="myForm2" action="index.php" method="POST">
            <input style="display:none;" type="text" id="update" name="message2"/>
            <hr/>
            <input id="sbtm" style="display:none; width:50%; float:right; background-color: red;"  value="Confirm Delete" type="submit" name="SubmitButton2" class="addBtn"/>
