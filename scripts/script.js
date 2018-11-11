@@ -32,6 +32,7 @@ list.addEventListener('click', function(ev) {
   
  }
 }, false);
+
 }
 
 function themeChange() {
@@ -443,6 +444,7 @@ function loading() {
   document.getElementById("myForm").addEventListener("submit", getPhpData());
   }
   function getPhpData() {
+    
              var xhttp = new XMLHttpRequest();
              try{
                  // Opera 8.0+, Firefox, Chrome, Safari
@@ -471,6 +473,7 @@ function loading() {
              };
              xhttp.open("GET", "log.txt", true);
              xhttp.send();   
+
   }
   // Create a new list item when clicking on the "Add" button
 function newElement(x) {
@@ -492,16 +495,29 @@ function newElement(x) {
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
-  
-    for (i = 0; i < close.length; i++) {
+    var s;
+    for (i = 0; i < close.length - 1; i++) {
       close[i].onclick = function() {
         var div = this.parentElement;
         div.style.display = "none";
       };
     }
   }
-  document.getElementById("myInput").value = "";
-
-
+  var p = document.getElementsByTagName('li');
+  for(var i=0; i<p.length; i++)
+  {
+      p[i].pnum=i;
+      p[i].onclick=function()
+      {
+         s = this.pnum - 8;
+         console.log(s + " list 1");
+         xArray.splice(s, 1 );
+         document.getElementById("update").value = xArray;
+         document.getElementById("chk").innerHTML = xArray;
+        
+      }
   }
+  document.getElementById("myInput").value = "";
+  }
+
 }

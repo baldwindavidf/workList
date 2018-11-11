@@ -8,6 +8,12 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
     file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
 }
 }
+if(isset($_POST['SubmitButton2'])){
+$f=fopen('log.txt','w');
+$data = $_POST['message2'];
+fwrite($f,$data);
+fclose($f);
+}
 ?>
 
 <!DOCTYPE html>
@@ -69,18 +75,26 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
       <div id="menu4" class="col-6 col-s-9">
         <div  class="header2">
           <h2 style="margin:5px">LIST 1</h2>
+          
           <form id="myForm" action="#" method="POST">
           <input name="message" type="text" id="myInput" placeholder="Enter items">
           <input value="Add" type="submit" name="SubmitButton" class="addBtn"/>
           </form>
+          <p>Updated List</p>
+          <form id="myForm2" action="#" method="POST">
+           <input type="text" id="update" name="message2"/>
+           <input style="float:right;" value="Update Results" type="submit" name="SubmitButton2" class="addBtn"/>
+         </form>
 
         </div>
         
         <ul id="myUL">
         </ul>
 
-      </div>
-      
+      </div><br/>
+
+     
+
       <div class="col-3 col-s-12">
         <div  id="menu2" class="aside">
           <h2 id="t2" class="normal">What?</h2>
