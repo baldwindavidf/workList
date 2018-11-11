@@ -80,12 +80,14 @@ fclose($f);
           <input name="message" type="text" id="myInput" placeholder="Enter items">
           <input value="Add" type="submit" name="SubmitButton" class="addBtn"/>
           </form>
-          <p>Updated List</p>
           <form id="myForm2" action="#" method="POST">
-           <input type="text" id="update" name="message2"/>
-           <input style="float:right;" value="Update Results" type="submit" name="SubmitButton2" class="addBtn"/>
+           <input style="display:none;" type="text" id="update" name="message2"/>
+           <hr/>
+           <input id="sbtm" style="display:none; width:50%; float:right; background-color: red;"  value="Confirm Delete" type="submit" name="SubmitButton2" class="addBtn"/>
+           <input id="sbtm2" style="display:none; width:50%; float:left;"  value="Cancel" type="submit" name="SubmitButton" class="addBtn"/>
          </form>
-
+        
+        
         </div>
         
         <ul id="myUL">

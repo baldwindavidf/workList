@@ -3,7 +3,8 @@
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
-for (i = 0; i < close.length; i++) {
+
+for (i = 0; i < close.length;i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
@@ -14,7 +15,8 @@ function setUpPage() {
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
-for (i = 8; i < myNodelist.length - 8; i++) {
+
+for (i = 8; i < myNodelist.length - 8 ;i++) {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
@@ -484,10 +486,13 @@ function newElement(x) {
   } else {
     var inputValue = x;
     var xArray = inputValue.split(",");
+    var e = xArray.length;
+    console.log(xArray.length + "array length");
     for(var i = 0; i < xArray.length - 1; i++) {
     var li = document.createElement("li");
     var t = document.createTextNode(xArray[i]);
     li.appendChild(t);
+    
     
     document.getElementById("myUL").appendChild(li);
     var span = document.createElement("SPAN");
@@ -495,13 +500,25 @@ function newElement(x) {
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
-    var s;
-    for (i = 0; i < close.length - 1; i++) {
+    var s = document.getElementById("myUL");
+    
+    var w = document.getElementById('sbtm');
+    var c = document.getElementById('sbtm2');
+    console.log(close.length + "close lenght");
+    for (i = 0; i < close.length - 1;i++) {
       close[i].onclick = function() {
+        w.style.display = "inline";
+        c.style.display = "inline";   
         var div = this.parentElement;
         div.style.display = "none";
-      };
-    }
+        };
+      }
+          var dc = close.length - 1; 
+          close[dc].onclick = function () {  
+            w.style.display = "inline";
+            c.style.display = "inline";
+          }
+           
   }
   var p = document.getElementsByTagName('li');
   for(var i=0; i<p.length; i++)
@@ -514,10 +531,12 @@ function newElement(x) {
          xArray.splice(s, 1 );
          document.getElementById("update").value = xArray;
          document.getElementById("chk").innerHTML = xArray;
-        
+         
       }
-  }
-  document.getElementById("myInput").value = "";
+
   }
 
+  document.getElementById("myInput").value = "";
+  }
+  
 }
