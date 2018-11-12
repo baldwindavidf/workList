@@ -163,17 +163,39 @@ body {
 #myUL li {
     cursor: pointer;
     position: relative;
-    padding: 12px 8px 12px 40px;
+    padding: 12px 40px 12px 40px;
     list-style-type: none;
-    background: #eee;
-    font-size: 18px;
+    background: #ddd;
+   /* font-size: 18px;*/
     transition: 0.2s;
+    text-align: center;
+    border-radius: 0px;
+    
     
     /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -webkit-animation-name: example6; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    animation-name: example7;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction:reverse;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example6 {
+    0%   {background-color: #ddd;}
+    100% {background-color:#3f5c66a4;}
+}
+
+/* Standard syntax */
+@keyframes example7 {
+    0%   {background-color:#eee;}
+    100% {background-color:#3f5c66a4;}
+}
   }
   
   /* Set all odd list items to a different color (zebra-stripes) */
@@ -183,28 +205,54 @@ body {
   
   /* Darker background-color on hover */
   #myUL li:hover {
-    background: #ddd;
+    background: #ccc;
   }
   
   /* When clicked on, add a background color and strike out text */
  #myUL li.checked {
-    background: #888;
+    background: #3f5c66a4;
     color: #fff;
     text-decoration: line-through;
-  }
+      
+        -webkit-animation-name: example4; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+        animation-name: example5;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-direction:normal;
+    }
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes example4 {
+        0%   {background-color: #eee;}
+        100% {background-color:#3f5c66a4;}
+    }
+    
+    /* Standard syntax */
+    @keyframes example5 {
+        0%   {background-color:#eee;}
+        100% {background-color:#3f5c66a4;}
+    }
+    
+  
   
   /* Add a "checked" mark when clicked on */
   #myUL li.checked::before {
-    content: '';
+
+    content: "\2714";
     position: absolute;
-    border-color: #fff;
+   /* border-color: rgb(244, 248, 243);
     border-style: solid;
-    border-width: 0 2px 2px 0;
+        transform: rotate(48deg);
+    height: 18px;
+    width: 7px;
+    border-width: 0 4px 4px 0;*/
     top: 10px;
     left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
+
+
+ 
+
   }
 
     /* When clicked on, add a background color and strike out text */
@@ -216,7 +264,9 @@ body {
   
   /* Add a "checked" mark when clicked on */
   #myUL li.checked2::before {
-    content: '';
+    content: 'c\u2718';
+    color:red;
+    background-color: #7eb1c2;
     position: absolute;
     border-color: #fff;
     border-style: solid;
@@ -224,8 +274,8 @@ body {
     top: 10px;
     left: 16px;
     transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
+    height: 75px;
+    width: 70px;
   }
   
   /* Style the close button */
@@ -233,12 +283,15 @@ body {
     position: absolute;
     right: 0;
     top: 0;
+    float: right;
     padding: 12px 16px 12px 16px;
+    font-weight: bold;
   }
   
   .close:hover {
     background-color: #f44336;
     color: white;
+    border-radius: 0px;
   }
   
   /* Style the header */
@@ -258,7 +311,7 @@ body {
   
   /* Style the input */
   input {
-    margin: 0;
+    margin: 0px;
     border: none;
     border-radius: 0;
     width: 75%;
@@ -266,10 +319,11 @@ body {
     float: left;
     font-size: 16px;
   }
-  
+
   /* Style the "Add" button */
   .addBtn {
     padding: 10px;
+    margin: 0px;
     width: 25%;
     background: #d9d9d9;
     color: #555;
@@ -671,3 +725,7 @@ body {
     margin-left:20px;
   }
 
+.header2 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}

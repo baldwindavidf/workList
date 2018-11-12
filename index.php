@@ -82,12 +82,12 @@ header("Location:index.php");
           <h2 style="margin:5px">LIST 1</h2>
           
           <form id="myForm" action="index.php" method="POST">
-          <input name="message" type="text" id="myInput" placeholder="Enter items">
+          <input id="text9" name="message" type="text" id="myInput" placeholder="Enter items">
           <input value="Add" type="submit" name="SubmitButton" class="addBtn"/>
           </form>
           <form id="myForm2" action="index.php" method="POST">
            <input style="display:none;" type="text" id="update" name="message2"/>
-           <hr/>
+           <br/>
            <input id="sbtm" style="display:none; width:50%; float:right; background-color: red;"  value="Confirm Delete" type="submit" name="SubmitButton2" class="addBtn"/>
            <input id="sbtm2" style="display:none; width:50%; float:left;"  value="Cancel" type="submit" name="SubmitButton" class="addBtn"/>
          </form>

@@ -2,6 +2,7 @@
 
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
+var checked = document.getElementsByTagName('li');
 var i;
 
 for (i = 0; i < close.length;i++) {
@@ -20,6 +21,7 @@ for (i = 8; i < myNodelist.length - 8 ;i++) {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
+  span.id = "listA";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
   
@@ -31,10 +33,9 @@ var list = document.getElementById('myUL');
 list.addEventListener('click', function(ev) {
  if (ev.target.tagName === 'LI') {
    ev.target.classList.toggle('checked');
-  
+   loadChecked(ev.target);
  }
 }, false);
-
 }
 
 function themeChange() {
@@ -470,17 +471,17 @@ function loading() {
             
              var data = this.responseText;    
              newElement(data);
-           
+             
              }
              };
              xhttp.open("GET", "log.txt", true);
              xhttp.send();   
-
+           
   }
   // Create a new list item when clicking on the "Add" button
 function newElement(x) {
-  //var inputValue = document.getElementById("text5").value;
-
+  var inputValue1 = document.getElementById("text9").value;
+  
   if (inputValue === '') {
     alert("Please enter a to do item");
   } else {
@@ -492,23 +493,21 @@ function newElement(x) {
     var li = document.createElement("li");
     var t = document.createTextNode(xArray[i]);
     li.appendChild(t);
-    
-    
     document.getElementById("myUL").appendChild(li);
     var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
+    var txt = document.createTextNode("\u2718");
     span.className = "close";
+    span.id = "listA";
     span.appendChild(txt);
     li.appendChild(span);
     var s = document.getElementById("myUL");
-    
     var w = document.getElementById('sbtm');
     var c = document.getElementById('sbtm2');
     console.log(close.length + "close lenght");
     for (i = 0; i < close.length - 1;i++) {
       close[i].onclick = function() {
         w.style.display = "inline";
-        c.style.display = "inline";   
+        c.style.display = "inline";  
         var div = this.parentElement;
         div.style.display = "none";
         };
@@ -517,8 +516,7 @@ function newElement(x) {
           close[dc].onclick = function () {  
             w.style.display = "inline";
             c.style.display = "inline";
-          }
-           
+          }   
   }
   var p = document.getElementsByTagName('li');
   for(var i=0; i<p.length; i++)
@@ -531,12 +529,16 @@ function newElement(x) {
          xArray.splice(s, 1 );
          document.getElementById("update").value = xArray;
          document.getElementById("chk").innerHTML = xArray;
-         
       }
-
   }
-
   document.getElementById("myInput").value = "";
   }
   
 }
+
+var data14;
+function loadChecked(x) {
+  localStorage.setItem("it", JSON.stringify(x.innerHTML));
+  data14 = JSON.parse(localStorage.getItem("it"));
+  alert(data14);
+  }
