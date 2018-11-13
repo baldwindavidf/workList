@@ -1,10 +1,8 @@
 <?php 
-if(isset($_POST['SubmitButton'])){ //check if form was submitted
+if(isset($_POST['SubmitButton'])){
   if(!empty($_POST['message'])) {
     $file = 'log.txt';
     $data = $_POST['message'].",\n";
-    // using the FILE_APPEND flag to append the content to the end of the file
-    // and the LOCK_EX flag to prevent anyone else writing to the file at the same time
     file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
     header("Location:index.php");
         exit;
@@ -32,7 +30,6 @@ header("Location:index.php");
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css" />
     <script src="scripts/script.js"></script>
-
 
 </head>
 
@@ -93,15 +90,12 @@ header("Location:index.php");
            <input id="sbtm2" style="display:none; width:50%; float:left;"  value="Cancel" type="submit" name="SubmitButton" class="addBtn"/>
          </form>
         
-        
         </div>
         
         <ul id="myUL">
         </ul>
 
       </div><br/>
-
-     
 
       <div class="col-3 col-s-12">
         <div  id="menu2" class="aside">
