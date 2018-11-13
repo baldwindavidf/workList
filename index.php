@@ -98,16 +98,18 @@ header("Location:index.php");
 
       <div class="col-3 col-s-12">
         <div id="menu2" class="aside">
-          <h2 id="t2" class="normal">What?</h2>
-          <p>Statement 1.</p>
-          <h2>Where?</h2>
-          <p>Statement 2.</p>
-          <h2>How?</h2>
-          <p>Statement 3.</p>
+          <!--<h2 id="t2" class="normal"></h2>-->
+          <video width="95%" height="80%" controls>
+            <source src="farm.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
       </div>
-
+      <audio id="myAudio">
+       <source src="sound12.mp3" type="audio/mpeg">
+       Your browser does not support the audio element.
+      </audio>
       <div class="footer">
             <small>Copyright © 2018 <a class="emailLink" href="mailto:daveandjaneen@gmail.com">David Baldwin</a></small>
       </div>

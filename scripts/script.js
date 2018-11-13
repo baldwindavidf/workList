@@ -1,5 +1,7 @@
 var close = document.getElementsByClassName("close");
 var checked = document.getElementsByTagName('li');
+var mySound2;
+var mySound3;
 var array15;
 var data19;
 var data17;
@@ -437,6 +439,8 @@ function settings() {
 
 function loading() {
   document.getElementById("myForm").addEventListener("submit", getPhpData());
+  mySound2 = new sound("sound12.mp3");
+  mySound3 = new sound("sound48.mp3");
   }
 
 function getPhpData() {
@@ -493,12 +497,14 @@ function newElement(x) {
         c.style.display = "inline";  
         var div = this.parentElement;
         div.style.display = "none";
+        mySound3.play();
         };
       }
       var dc = close.length - 1; 
       close[dc].onclick = function () {  
         w.style.display = "inline";
         c.style.display = "inline";
+        mySound3.play();
       }   
   }
   var p = document.getElementsByTagName('li');
@@ -516,6 +522,7 @@ function newElement(x) {
 }
 
 function loadChecked() {
+  mySound2.play();
   array14 = document.getElementsByTagName('li');
   data17 = "";
   localStorage.setItem("myCheck2", JSON.stringify(data17));
@@ -534,4 +541,17 @@ function loadCheck() {
   }
 }
 
-
+function sound(src) {
+  this.sound = document.createElement("audio");
+  this.sound.src = src;
+  this.sound.setAttribute("preload", "auto");
+  this.sound.setAttribute("controls", "none");
+  this.sound.style.display = "none";
+  document.body.appendChild(this.sound);
+  this.play = function(){
+      this.sound.play();
+  }
+  this.stop = function(){
+      this.sound.pause();
+  }    
+}
