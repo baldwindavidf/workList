@@ -33,6 +33,7 @@ header("Location:index.php");
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css" />
     <script src="scripts/script.js"></script>
 
+
 </head>
 
 <body id="bd1" onload="setUpPage(); loadSettings(); loadTheme(); loading(); loadCheck();">
@@ -113,7 +114,7 @@ header("Location:index.php");
         </div>
       </div>
       </div>
-           
+
       <div class="footer">
             <small>Copyright © 2018 <a class="emailLink" href="mailto:daveandjaneen@gmail.com">David Baldwin</a></small>
       </div>

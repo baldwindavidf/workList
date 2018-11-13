@@ -1,22 +1,13 @@
-
-
-// Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var checked = document.getElementsByTagName('li');
-var i;
+var array15;
+var data19;
+var data17;
+var data18;
+var array14; 
 
-for (i = 0; i < close.length;i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  };
-}
 function setUpPage() {
-
-// Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
-var i;
-
 for (i = 8; i < myNodelist.length - 8 ;i++) {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
@@ -26,9 +17,7 @@ for (i = 8; i < myNodelist.length - 8 ;i++) {
   myNodelist[i].appendChild(span);
 }
 
-// Add a "checked" symbol when clicking on a list item
 var list = document.getElementById('myUL');
-var ind;
 list.addEventListener('click', function(ev) {
  if (ev.target.tagName === 'LI') {
    ev.target.classList.toggle('checked');
@@ -49,6 +38,7 @@ function themeChange() {
   localStorage.setItem("items6", JSON.stringify(item6.style.color));
   localStorage.setItem("items7", JSON.stringify(item7.style.color));
 }
+
 function themeChange1() {
   var item5 = document.getElementById("bd1");
   var item6 = document.getElementById("txt1");
@@ -60,6 +50,7 @@ function themeChange1() {
   localStorage.setItem("items6", JSON.stringify(item6.style.color));
   localStorage.setItem("items7", JSON.stringify(item7.style.color));
 }
+
 function themeChange2() {
   var item5 = document.getElementById("bd1");
   var item6 = document.getElementById("txt1");
@@ -198,6 +189,7 @@ function fontChange() {
     localStorage.setItem("items9", JSON.stringify(item9.className));
   }
 }
+
 function fontChange2() {
   var x = document.getElementById("fSize");
   var item1 = document.getElementById("menu1");
@@ -348,6 +340,7 @@ var data9;
   item4.className = data9;
   }
 }
+
 function loadTheme() {
   var data5;
   data5 = JSON.parse(localStorage.getItem('items5'));
@@ -441,49 +434,45 @@ function settings() {
   }, 200);
   }
 }
+
 function loading() {
   document.getElementById("myForm").addEventListener("submit", getPhpData());
   }
-  function getPhpData() {
-             var xhttp = new XMLHttpRequest();
-             try{
-                 // Opera 8.0+, Firefox, Chrome, Safari
-                 xhttp = new XMLHttpRequest();
-             }catch (e){
-                 // Internet Explorer Browsers
-                 try{
-                    xhttp = new ActiveXObject("Msxml2.XMLHTTP");
-                 }catch (e) {
-          
-                    try{
-                       xhttp = new ActiveXObject("Microsoft.XMLHTTP");
-                    }catch (e){
-                       alert("Browser not supported");
-                       return false;
-                    }
-                 }
-             }
-             xhttp.onreadystatechange = function() {
-             if (this.readyState == 4 && this.status == 200) {
-             var data = this.responseText;    
-             
-             newElement(data);
-             loadCheck();
-             }
-             };
-             xhttp.open("GET", "log.txt", true);
-             xhttp.send();   
+
+function getPhpData() {
+  var xhttp = new XMLHttpRequest();
+    try{
+      xhttp = new XMLHttpRequest();
+    }catch (e){
+    try{
+      xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+    }catch (e) {
+    try{
+      xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }catch (e){
+      alert("Browser not supported");
+    return false;
+    }
   }
-  // Create a new list item when clicking on the "Add" button
+}
+     xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+      var data = this.responseText;    
+      newElement(data);
+      loadCheck();
+      }
+   };
+   xhttp.open("GET", "log.txt", true);
+   xhttp.send();   
+}
+  
 function newElement(x) {
   var inputValue1 = document.getElementById("text9").value;
-  
   if (inputValue === '') {
     alert("Please enter a to do item");
   } else {
     var inputValue = x;
     var xArray = inputValue.split(",");
-    var e = xArray.length;
     for(var i = 0; i < xArray.length - 1; i++) {
     var li = document.createElement("li");
     var t = document.createTextNode(xArray[i]);
@@ -496,7 +485,6 @@ function newElement(x) {
     span.appendChild(txt);
     li.appendChild(span);
     
-    var s = document.getElementById("myUL");
     var w = document.getElementById('sbtm');
     var c = document.getElementById('sbtm2');
     for (i = 0; i < close.length - 1;i++) {
@@ -507,11 +495,11 @@ function newElement(x) {
         div.style.display = "none";
         };
       }
-          var dc = close.length - 1; 
-          close[dc].onclick = function () {  
-            w.style.display = "inline";
-            c.style.display = "inline";
-          }   
+      var dc = close.length - 1; 
+      close[dc].onclick = function () {  
+        w.style.display = "inline";
+        c.style.display = "inline";
+      }   
   }
   var p = document.getElementsByTagName('li');
   for(var i=0; i<p.length; i++)
@@ -527,11 +515,6 @@ function newElement(x) {
   }
 }
 
-var array15;
-var data19;
-var data17;
-var data18;
-var array14;
 function loadChecked() {
   array14 = document.getElementsByTagName('li');
   data17 = "";
@@ -550,3 +533,5 @@ function loadCheck() {
   array15[i].className = data19[i - 8];
   }
 }
+
+
