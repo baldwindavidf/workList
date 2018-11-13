@@ -24,16 +24,16 @@ for (i = 8; i < myNodelist.length - 8 ;i++) {
   span.id = "listA";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
-  
 }
 
 // Add a "checked" symbol when clicking on a list item
-//var list = document.querySelector('ul');
 var list = document.getElementById('myUL');
+var ind;
 list.addEventListener('click', function(ev) {
  if (ev.target.tagName === 'LI') {
    ev.target.classList.toggle('checked');
-   loadChecked(ev.target);
+   loadChecked();
+   loadCheck();
  }
 }, false);
 }
@@ -404,7 +404,6 @@ function settings() {
   window.setTimeout(function() {
   document.getElementById("btnTh5").style.display = "inline";
   }, 700);
-
   }
   else
   {
@@ -440,14 +439,12 @@ function settings() {
   window.setTimeout(function() {
   document.getElementById("btnTh5").style.display = "none";
   }, 200);
-
   }
 }
 function loading() {
   document.getElementById("myForm").addEventListener("submit", getPhpData());
   }
   function getPhpData() {
-    
              var xhttp = new XMLHttpRequest();
              try{
                  // Opera 8.0+, Firefox, Chrome, Safari
@@ -468,15 +465,14 @@ function loading() {
              }
              xhttp.onreadystatechange = function() {
              if (this.readyState == 4 && this.status == 200) {
-            
              var data = this.responseText;    
-             newElement(data);
              
+             newElement(data);
+             loadCheck();
              }
              };
              xhttp.open("GET", "log.txt", true);
              xhttp.send();   
-           
   }
   // Create a new list item when clicking on the "Add" button
 function newElement(x) {
@@ -488,7 +484,6 @@ function newElement(x) {
     var inputValue = x;
     var xArray = inputValue.split(",");
     var e = xArray.length;
-    console.log(xArray.length + "array length");
     for(var i = 0; i < xArray.length - 1; i++) {
     var li = document.createElement("li");
     var t = document.createTextNode(xArray[i]);
@@ -500,10 +495,10 @@ function newElement(x) {
     span.id = "listA";
     span.appendChild(txt);
     li.appendChild(span);
+    
     var s = document.getElementById("myUL");
     var w = document.getElementById('sbtm');
     var c = document.getElementById('sbtm2');
-    console.log(close.length + "close lenght");
     for (i = 0; i < close.length - 1;i++) {
       close[i].onclick = function() {
         w.style.display = "inline";
@@ -525,20 +520,33 @@ function newElement(x) {
       p[i].onclick=function()
       {
          s = this.pnum - 8;
-         console.log(s + " list 1");
          xArray.splice(s, 1 );
          document.getElementById("update").value = xArray;
-         document.getElementById("chk").innerHTML = xArray;
       }
   }
-  document.getElementById("myInput").value = "";
   }
-  
 }
 
-var data14;
-function loadChecked(x) {
-  localStorage.setItem("it", JSON.stringify(x.innerHTML));
-  data14 = JSON.parse(localStorage.getItem("it"));
-  alert(data14);
+var array15;
+var data19;
+var data17;
+var data18;
+var array14;
+function loadChecked() {
+  array14 = document.getElementsByTagName('li');
+  data17 = "";
+  localStorage.setItem("myCheck2", JSON.stringify(data17));
+  for (i = 8; i < array14.length; i++) {
+  data17 += array14[i].className + ",";
+  localStorage.setItem("myCheck2", JSON.stringify(data17));
   }
+}
+
+function loadCheck() {
+  array15 = document.getElementsByTagName('LI');
+  data18 = JSON.parse(localStorage.getItem("myCheck2"));
+  data19 = data18.split(",");
+  for (i = 8 ; i  < array15.length ; i++) {
+  array15[i].className = data19[i - 8];
+  }
+}

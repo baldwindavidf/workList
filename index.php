@@ -35,7 +35,7 @@ header("Location:index.php");
 
 </head>
 
-<body id="bd1" onload="setUpPage(); loadSettings(); loadTheme(); loading();">
+<body id="bd1" onload="setUpPage(); loadSettings(); loadTheme(); loading(); loadCheck();">
     <div class="header">
     </div>
 
@@ -85,7 +85,7 @@ header("Location:index.php");
           <input id="text9" name="message" type="text" id="myInput" placeholder="Enter items">
           <input value="Add" type="submit" name="SubmitButton" class="addBtn"/>
           </form>
-          <form id="myForm2" action="index.php" method="POST">
+          <form onsubmit="loadChecked();" id="myForm2" action="index.php" method="POST">
            <input style="display:none;" type="text" id="update" name="message2"/>
            <br/>
            <input id="sbtm" style="display:none; width:50%; float:right; background-color: red;"  value="Confirm Delete" type="submit" name="SubmitButton2" class="addBtn"/>
