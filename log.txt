@@ -1,6 +1,1 @@
-ed,
-we,
-wfw,
-wf,
-wf,
-wf,
+ed,we,wfw,wf,wf,
