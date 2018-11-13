@@ -30,7 +30,6 @@ header("Location:index.php");
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css" />
     <script src="scripts/script.js"></script>
-
 </head>
 
 <body id="bd1" onload="setUpPage(); loadSettings(); loadTheme(); loading(); loadCheck();">
@@ -98,7 +97,7 @@ header("Location:index.php");
       </div><br/>
 
       <div class="col-3 col-s-12">
-        <div  id="menu2" class="aside">
+        <div id="menu2" class="aside">
           <h2 id="t2" class="normal">What?</h2>
           <p>Statement 1.</p>
           <h2>Where?</h2>
