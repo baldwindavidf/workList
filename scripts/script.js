@@ -10,7 +10,7 @@ var array14;
 
 function setUpPage() {
 var myNodelist = document.getElementsByTagName("LI");
-for (i = 8; i < myNodelist.length - 8 ;i++) {
+for (i = 3; i < myNodelist.length - 3 ;i++) {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
@@ -513,7 +513,7 @@ function newElement(x) {
       p[i].pnum=i;
       p[i].onclick=function()
       {
-         s = this.pnum - 8;
+         s = this.pnum - 3;
          xArray.splice(s, 1 );
          document.getElementById("update").value = xArray;
       }
@@ -526,7 +526,7 @@ function loadChecked() {
   array14 = document.getElementsByTagName('li');
   data17 = "";
   localStorage.setItem("myCheck2", JSON.stringify(data17));
-  for (i = 8; i < array14.length; i++) {
+  for (i = 3; i < array14.length; i++) {
   data17 += array14[i].className + ",";
   localStorage.setItem("myCheck2", JSON.stringify(data17));
   }
@@ -536,8 +536,8 @@ function loadCheck() {
   array15 = document.getElementsByTagName('LI');
   data18 = JSON.parse(localStorage.getItem("myCheck2"));
   data19 = data18.split(",");
-  for (i = 8 ; i  < array15.length ; i++) {
-  array15[i].className = data19[i - 8];
+  for (i = 3 ; i  < array15.length ; i++) {
+  array15[i].className = data19[i - 3];
   }
 }
 

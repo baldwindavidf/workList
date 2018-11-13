@@ -37,15 +37,15 @@ header("Location:index.php");
     </div>
 
     <ul class="headerList">
-        <li class="fleft"><a href="index.php">Home</a></li>
+        <li class="fleft"><a href="index.php">TO DO LIST</a></li>
         <li  class="fleft"><a id="btnSet" onclick="settings();" href="#">Settings</a></li>
-        <li class="fleft"><a href="#news">New List</a></li>
+       <!-- <li class="fleft"><a href="#news">New List</a></li>
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">My List</a>
           <div class="dropdown-content">
             <a href="#">List 1</a>
             <a href="#">List 2</a>
-            <a href="#">List 3</a>
+            <a href="#">List 3</a>-->
           </div>
         </li>
       </ul>
@@ -67,16 +67,16 @@ header("Location:index.php");
       
       <div id="menu1" class="col-3 col-s-3 menu">
         <ul>
-          <li class="uList1">Tab 1</li>
-          <li class="uList1">Tab 2</li>
-          <li class="uList1">Tab 3</li>
-          <li class="uList1">Tab 4</li>
+          <li class="uList1">MOBIL TOUCH 1</li>
+          <li class="uList1">MOBIL TOUCH 2</li>
+          <li class="uList1">MOBIL TOUCH 3</li>
+          <li class="uList1">MOBIL TOUCH 4</li>
         </ul>
       </div>
       
       <div id="menu4" class="col-6 col-s-9">
         <div  class="header2">
-          <h2 style="margin:5px">LIST 1</h2>
+          <h2 style="margin:5px">MY TO DO LIST</h2>
           
           <form id="myForm" action="index.php" method="POST">
           <input id="text9" name="message" type="text" id="myInput" placeholder="Enter items">
