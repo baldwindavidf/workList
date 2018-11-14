@@ -1,5 +1,5 @@
-var close = document.getElementsByClassName("close");
-var checked = document.getElementsByTagName('li');
+//var close = document.getElementsByClassName("close");
+//var checked = document.getElementsByTagName('li');
 var mySound2;
 var mySound3;
 var array15;
@@ -23,6 +23,7 @@ var list = document.getElementById('myUL');
 list.addEventListener('click', function(ev) {
  if (ev.target.tagName === 'LI') {
    ev.target.classList.toggle('checked');
+   submited();
    loadChecked();
    loadCheck();
  }
@@ -461,17 +462,20 @@ function getPhpData() {
 }
      xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-      var data = this.responseText;    
+      var data = this.responseText;   
+
       newElement(data);
       loadCheck();
-      }
-   };
+      }};
+      
+    
    xhttp.open("GET", "log.txt", true);
-   xhttp.send();   
+   xhttp.send();
 }
   
 function newElement(x) {
   var inputValue1 = document.getElementById("text9").value;
+  close = document.getElementsByClassName("close");
   if (inputValue === '') {
     alert("Please enter a to do item");
   } else {
@@ -508,17 +512,28 @@ function newElement(x) {
       }   
   }
   var p = document.getElementsByTagName('li');
-  for(var i=0; i<p.length; i++)
+  var s;
+  for(var i = 0; i<p.length; i++)
   {
       p[i].pnum=i;
       p[i].onclick=function()
       {
-         s = this.pnum - 3;
+         s = this.pnum - 6;
+         //s.style.display = "none";
          xArray.splice(s, 1 );
          document.getElementById("update").value = xArray;
       }
   }
   }
+  
+}
+function submited() {
+
+  var al = array15;
+  var da = data19;
+  
+  alert(al);
+  alert(da);
 }
 
 function loadChecked() {
@@ -526,7 +541,7 @@ function loadChecked() {
   array14 = document.getElementsByTagName('li');
   data17 = "";
   localStorage.setItem("myCheck2", JSON.stringify(data17));
-  for (i = 3; i < array14.length; i++) {
+  for (i = 0; i < array14.length - 0; i++) {
   data17 += array14[i].className + ",";
   localStorage.setItem("myCheck2", JSON.stringify(data17));
   }
@@ -536,8 +551,8 @@ function loadCheck() {
   array15 = document.getElementsByTagName('LI');
   data18 = JSON.parse(localStorage.getItem("myCheck2"));
   data19 = data18.split(",");
-  for (i = 3 ; i  < array15.length ; i++) {
-  array15[i].className = data19[i - 3];
+  for (i = 0; i  < array15.length - 0; i++) {
+  array15[i].className = data19[i - 0];
   }
 }
 
