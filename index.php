@@ -39,13 +39,13 @@ header("Location:index.php");
     <ul class="headerList">
         <li class="fleft"><a href="index.php">TO DO LIST</a></li>
         <li  class="fleft"><a id="btnSet" onclick="settings();" href="#">Settings</a></li>
-       <!-- <li class="fleft"><a href="#news">New List</a></li>
+       <li class="fleft"><a href="#news">New List</a></li>
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">My List</a>
           <div class="dropdown-content">
-            <a href="#">List 1</a>
+           <a href="#">List 1</a>
             <a href="#">List 2</a>
-            <a href="#">List 3</a>-->
+            <a href="#">List 3</a>
           </div>
         </li>
       </ul>
