@@ -1,5 +1,3 @@
-//var close = document.getElementsByClassName("close");
-//var checked = document.getElementsByTagName('li');
 var mySound2;
 var mySound3;
 var array15;
@@ -10,7 +8,7 @@ var array14;
 
 function setUpPage() {
 var myNodelist = document.getElementsByTagName("LI");
-for (i = 3; i < myNodelist.length - 3 ;i++) {
+for (i = 8; i < myNodelist.length - 8 ;i++) {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
@@ -22,8 +20,7 @@ for (i = 3; i < myNodelist.length - 3 ;i++) {
 var list = document.getElementById('myUL');
 list.addEventListener('click', function(ev) {
  if (ev.target.tagName === 'LI') {
-   ev.target.classList.toggle('checked');
-   submited();
+  ev.target.classList.toggle('checked');
    loadChecked();
    loadCheck();
  }
@@ -496,18 +493,23 @@ function newElement(x) {
     var w = document.getElementById('sbtm');
     var c = document.getElementById('sbtm2');
     for (i = 0; i < close.length - 1;i++) {
+      
       close[i].onclick = function() {
         w.style.display = "inline";
         c.style.display = "inline";  
         var div = this.parentElement;
         div.style.display = "none";
+        div.className = "rm";
         mySound3.play();
-        };
+        };        
       }
       var dc = close.length - 1; 
       close[dc].onclick = function () {  
         w.style.display = "inline";
         c.style.display = "inline";
+        var div = this.parentElement;
+        div.style.display = "none";
+        div.className = "rm";
         mySound3.play();
       }   
   }
@@ -515,35 +517,36 @@ function newElement(x) {
   var s;
   for(var i = 0; i<p.length; i++)
   {
+
       p[i].pnum=i;
       p[i].onclick=function()
       {
-         s = this.pnum - 6;
-         //s.style.display = "none";
+         s = this.pnum - 8;
          xArray.splice(s, 1 );
+ 
          document.getElementById("update").value = xArray;
       }
   }
   }
-  
 }
-function submited() {
 
-  var al = array15;
-  var da = data19;
-  
-  alert(al);
-  alert(da);
-}
 
 function loadChecked() {
-  mySound2.play();
+  
   array14 = document.getElementsByTagName('li');
   data17 = "";
   localStorage.setItem("myCheck2", JSON.stringify(data17));
   for (i = 0; i < array14.length - 0; i++) {
-  data17 += array14[i].className + ",";
+    if (array14[i].className == "rm"){
+      
+    }
+    else
+    {
+      data17 += array14[i].className + ",";
+    }
   localStorage.setItem("myCheck2", JSON.stringify(data17));
+location.reload(true);
+  mySound2.play();
   }
 }
 
