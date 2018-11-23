@@ -545,7 +545,7 @@ function loadChecked() {
       data17 += array14[i].className + ",";
     }
   localStorage.setItem("myCheck2", JSON.stringify(data17));
-//location.reload(true);
+   location.reload(true);
 
   mySound2.play();
   }
