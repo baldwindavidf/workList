@@ -574,3 +574,10 @@ function sound(src) {
       this.sound.pause();
   }    
 }
+
+function myFont1() {
+  var item1 = document.getElementById("menu1");
+  var item2 = document.getElementById("menu2");
+  var item9 = document.getElementById("menu4");
+  item1.style.fontFamily = "";
+}

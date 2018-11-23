@@ -11,7 +11,7 @@
     padding: 15px;
 }
 html {
-    font-family: "Lucida Sans", sans-serif;
+    font-family: "Lucida Sans", "sans-serif";
 }
 .header { 
     color: #ffffff;
@@ -625,3 +625,12 @@ input {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../files/K22\ Spotty\ Face.otf);
+ }
+ 
+ * {
+    font-family: myFirstFont;
+ }
