@@ -535,7 +535,7 @@ function loadChecked() {
   
   array14 = document.getElementsByTagName('li');
   data17 = "";
-  localStorage.setItem("myCheck2", JSON.stringify(data17));
+  localStorage.setItem("myCheck3", JSON.stringify(data17));
   for (i = 0; i < array14.length - 0; i++) {
     if (array14[i].className == "rm"){
       
@@ -544,7 +544,7 @@ function loadChecked() {
     {
       data17 += array14[i].className + ",";
     }
-  localStorage.setItem("myCheck2", JSON.stringify(data17));
+  localStorage.setItem("myCheck3", JSON.stringify(data17));
    location.reload(true);
 
   mySound2.play();
@@ -553,7 +553,7 @@ function loadChecked() {
 
 function loadCheck() {
   array15 = document.getElementsByTagName('LI');
-  data18 = JSON.parse(localStorage.getItem("myCheck2"));
+  data18 = JSON.parse(localStorage.getItem("myCheck3"));
   data19 = data18.split(",");
   for (i = 0; i  < array15.length - 0; i++) {
   array15[i].className = data19[i - 0];
