@@ -466,7 +466,7 @@ function getPhpData() {
       }};
       
     
-   xhttp.open("GET", "log.txt", true);
+   xhttp.open("GET", "log1.txt", true);
    xhttp.send();
 }
   

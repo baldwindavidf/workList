@@ -1,19 +1,19 @@
 <?php 
 if(isset($_POST['SubmitButton'])){
   if(!empty($_POST['message'])) {
-    $file = 'log.txt';
+    $file = 'log1.txt';
     $data = $_POST['message'].",\n";
     file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
-    header("Location:index.php");
+    header("Location:index1.php");
         exit;
 }
 }
 if(isset($_POST['SubmitButton2'])){
-$f=fopen('log.txt','w');
+$f=fopen('log1.txt','w');
 $data = $_POST['message2'];
 fwrite($f,$data);
 fclose($f);
-header("Location:index.php");
+header("Location:index1.php");
         exit;
 }
 ?>
@@ -29,7 +29,7 @@ header("Location:index.php");
     <meta name="author" content="David Baldwin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css" />
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script1.js"></script>
 </head>
 
 <body id="bd1" onload="setUpPage(); loadSettings(); loadTheme(); loading(); loadCheck();">
@@ -76,13 +76,13 @@ header("Location:index.php");
       
       <div id="menu4" class="col-6 col-s-9">
         <div  class="header2">
-          <h2 style="margin:5px">MY TO DO LIST 1</h2>
+          <h2 style="margin:5px">MY TO DO LIST 2</h2>
           
-          <form id="myForm" action="index.php" method="POST">
+          <form id="myForm" action="index1.php" method="POST">
           <input id="text9" name="message" type="text" id="myInput" placeholder="Enter items">
           <input value="Add" type="submit" name="SubmitButton" class="addBtn"/>
           </form>
-          <form onsubmit="loadChecked(); loadCheck(); reloaded();" id="myForm2" action="index.php" method="POST">
+          <form onsubmit="loadChecked(); loadCheck(); reloaded();" id="myForm2" action="index1.php" method="POST">
            <input style="display:none;" type="text" id="update" name="message2"/>
            <br/>
            <input id="sbtm" style="display:none; width:50%; float:right; background-color: red;"  value="Confirm Delete" type="submit" name="SubmitButton2" class="addBtn"/>
@@ -98,6 +98,7 @@ header("Location:index.php");
 
       <div class="col-3 col-s-12">
         <div id="menu2" class="aside">
+          <!--<h2 id="t2" class="normal"></h2>-->
           <video width="95%" height="80%" controls>
             <source src="farm.mp4" type="video/mp4">
             Your browser does not support the video tag.

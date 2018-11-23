@@ -1,0 +1,6 @@
+get groceries,
+get homework done,
+get trash out,
+trash,
+work,
+jump,
