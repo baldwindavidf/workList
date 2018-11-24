@@ -67,10 +67,10 @@ header("Location:index.php");
       
       <div id="menu1" class="col-3 col-s-3 menu">
         <ul>
-          <li onclick="myFont1();" class="uList1">MOBIL TOUCH 1</li>
-          <li onclick="myFont2();" class="uList1">MOBIL TOUCH 2</li>
-          <li onclick="myFont3();" class="uList1">MOBIL TOUCH 3</li>
-          <li onclick="myFont4();" class="uList1">MOBIL TOUCH 4</li>
+          <li touch="myFontOne();" class="uList1">MOBIL TOUCH 1</li>
+          <li touch="myFontTwo();" class="uList2">MOBIL TOUCH 2</li>
+          <li touch="myFontThree();" class="uList3">MOBIL TOUCH 3</li>
+          <li touch="myFontFour();" class="uList4">MOBIL TOUCH 4</li>
         </ul>
       </div>
       

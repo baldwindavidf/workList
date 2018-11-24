@@ -575,9 +575,19 @@ function sound(src) {
   }    
 }
 
-function myFont1() {
-  var item1 = document.getElementById("menu1");
-  var item2 = document.getElementById("menu2");
-  var item9 = document.getElementById("menu4");
-  item1.style.fontFamily = "";
+function myFontOne() {
+ var x = document.getElementsByTagName("body");
+  x.className = "fontOne";
+}
+function myFontTwo() {
+  var x = document.getElementsByTagName("body");
+  x.className = "fontTwo";
+}
+function myFontThree() {
+  var x = document.getElementsByTagName("body");
+  x.className = "fontThree";
+}
+function myFontFour() {
+  var x = document.getElementsByTagName("body");
+  x.className = "fontFour";
 }

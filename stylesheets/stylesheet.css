@@ -631,6 +631,30 @@ input {
     src: url(../files/K22\ Spotty\ Face.otf);
  }
  
- * {
+.fontOne {
     font-family: myFirstFont;
+ }
+ @font-face {
+    font-family: mySecondFont;
+    src: url(../files/Carnevalee\ Freakshow.ttf);
+ }
+ 
+.fontTwo {
+    font-family: mySecondFont;
+ }
+ @font-face {
+    font-family: myThirdFont;
+    src: url(../files/K26ToyBlocks123.ttf);
+ }
+ 
+.fontThree {
+    font-family: myThrirdFont;
+ }
+ @font-face {
+    font-family: myFourthFont;
+    src: url(../files/the\ ticket.ttf);
+ }
+ 
+.fontFour {
+    font-family: myFourthFont;
  }
