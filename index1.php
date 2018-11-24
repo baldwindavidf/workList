@@ -39,7 +39,7 @@ header("Location:index1.php");
     <ul class="headerList">
         <li class="fleft"><a href="index.php">TO DO LIST</a></li>
         <li  class="fleft"><a id="btnSet" onclick="settings();" href="#">Settings</a></li>
-       <li class="fleft"><a href="#news">New List</a></li>
+       <li style="display:none;" class="fleft"><a href="#news">New List</a></li>
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">My List</a>
           <div class="dropdown-content">
@@ -67,10 +67,10 @@ header("Location:index1.php");
       
       <div id="menu1" class="col-3 col-s-3 menu">
         <ul>
-          <li class="uList1">MOBIL TOUCH 1</li>
-          <li class="uList1">MOBIL TOUCH 2</li>
-          <li class="uList1">MOBIL TOUCH 3</li>
-          <li class="uList1">MOBIL TOUCH 4</li>
+          <div class="tooltip1"><li >Select List<span class="tooltiptext1">Click on the My List tab and then select from one of the three list.</span></li></div><br/>
+          <div class="tooltip2"><li >Add Items<span class="tooltiptext2">Type a to do item you want to add in the text field and then click the Add button.</span></li></div><br/>
+          <div class="tooltip3"><li >Check Items<span class="tooltiptext3">Click on a item in the list to put a check mark and cross out the text for a completed item.</span></li></div><br/>
+          <div class="tooltip4"><li >Remove Items<span class="tooltiptext4">Click on the X on the right side of an item. A set of options will then appear. Then select either Cancel or Confirm Delete to delete the item</span></li></div>
         </ul>
       </div>
       
@@ -98,9 +98,8 @@ header("Location:index1.php");
 
       <div class="col-3 col-s-12">
         <div id="menu2" class="aside">
-          <!--<h2 id="t2" class="normal"></h2>-->
           <video width="95%" height="80%" controls>
-            <source src="farm.mp4" type="video/mp4">
+            <source src="zoom_0.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>

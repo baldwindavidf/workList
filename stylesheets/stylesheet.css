@@ -337,7 +337,7 @@ input {
 }
 .container {
     margin-left: 175px;
-    width: 130px;
+    width: 180px;
     background-color: #ddd;
     border-radius: 30px;
     border: black;
@@ -605,15 +605,15 @@ input {
 }
 #btnTh3 {
     width:135px;
-    margin-left:37px;
+    margin-left:52px;
 }
 #btnTh4 {
     width:135px;
-    margin-left:172px;
+    margin-left:212px;
 }
 #btnTh5 {
     width:135px;
-    margin-left:172px;
+    margin-left:212px;
 }
 #txt1 {
     margin-left:20px;
@@ -626,35 +626,171 @@ input {
     border-top-right-radius: 20px;
 }
 
-@font-face {
-    font-family: myFirstFont;
+
+
+ @font-face {
+    font-family: myFourthFont;
     src: url(../files/K22\ Spotty\ Face.otf);
  }
  
-.fontOne {
-    font-family: myFirstFont;
- }
- @font-face {
-    font-family: mySecondFont;
-    src: url(../files/Carnevalee\ Freakshow.ttf);
- }
- 
-.fontTwo {
-    font-family: mySecondFont;
- }
- @font-face {
-    font-family: myThirdFont;
-    src: url(../files/K26ToyBlocks123.ttf);
- }
- 
-.fontThree {
-    font-family: myThrirdFont;
- }
- @font-face {
-    font-family: myFourthFont;
-    src: url(../files/the\ ticket.ttf);
- }
- 
-.fontFour {
+* {
     font-family: myFourthFont;
  }
+
+ .tooltip1 {
+    position: relative;
+    display: block;
+}
+
+.tooltip1 .tooltiptext1 {
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -295%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip1 .tooltiptext1::after {
+    
+    content: "";
+    position: absolute;
+    width: 220px;
+    top: 100%;
+    left: 0%;
+    margin-left: 0px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip2 {
+    position: relative;
+    display: block;
+}
+
+.tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -295%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip2 .tooltiptext2::after {
+    
+    content: "";
+    position: absolute;
+    width: 220px;
+    top: 100%;
+    left: 0%;
+    margin-left: 0px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip3 {
+    position: relative;
+    display: block;
+}
+
+.tooltip3 .tooltiptext3 {
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -295%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip3 .tooltiptext3::after {
+    
+    content: "";
+    position: absolute;
+    width: 220px;
+    top: 100%;
+    left: 0%;
+    margin-left: 0px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip3:hover .tooltiptext3 {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip4 {
+    position: relative;
+    display: block;
+}
+
+.tooltip4 .tooltiptext4 {
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -295%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip4 .tooltiptext4::after {
+    
+    content: "";
+    position: absolute;
+    width: 220px;
+    top: 100%;
+    left: 0%;
+    margin-left: 0px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip4:hover .tooltiptext4 {
+    visibility: visible;
+    opacity: 1;
+}

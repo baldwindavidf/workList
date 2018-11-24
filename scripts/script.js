@@ -15,6 +15,7 @@ for (i = 8; i < myNodelist.length - 8 ;i++) {
   span.id = "listA";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
+
 }
 
 var list = document.getElementById('myUL');
@@ -338,6 +339,9 @@ var data9;
   x.innerHTML = data3;
   x.className = data4;
   item4.className = data9;
+  var docNw = document.getElementById("bd1");
+  var newCllist= JSON.parse(localStorage.getItem("myCheck16"));
+  docNw.classList.add(newCllist);
   }
 }
 
@@ -575,19 +579,3 @@ function sound(src) {
   }    
 }
 
-function myFontOne() {
- var x = document.getElementsByTagName("body");
-  x.className = "fontOne";
-}
-function myFontTwo() {
-  var x = document.getElementsByTagName("body");
-  x.className = "fontTwo";
-}
-function myFontThree() {
-  var x = document.getElementsByTagName("body");
-  x.className = "fontThree";
-}
-function myFontFour() {
-  var x = document.getElementsByTagName("body");
-  x.className = "fontFour";
-}
