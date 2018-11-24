@@ -67,7 +67,7 @@ header("Location:index.php");
       
       <div id="menu1" class="col-3 col-s-3 menu">
         <ul>
-          <li class="uList1"><button ontouchstart="myFontOne();" >MOBIL TOUCH 1</button></li>
+          <li class="uList1"><button onclick="myFontOne();" >MOBIL TOUCH 1</button></li>
           <li ontouchstart="myFontTwo();" class="uList2">MOBIL TOUCH 2</li>
           <li ontouchstart="myFontThree();" class="uList3">MOBIL TOUCH 3</li>
           <li ontouchstart="myFontFour();" class="uList4">MOBIL TOUCH 4</li>
