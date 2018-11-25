@@ -41,7 +41,7 @@ header("Location:index2.php");
         <li  class="fleft"><a id="btnSet" onclick="settings();" href="#">Settings</a></li>
        <li style="display:none;" class="fleft"><a href="#news">New List</a></li>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">My List</a>
+          <a href="javascript:void(0)" class="dropbtn">My Lists</a>
           <div class="dropdown-content">
            <a href="index.php">List 1</a>
             <a href="index1.php">List 2</a>
