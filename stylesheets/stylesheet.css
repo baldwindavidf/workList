@@ -332,12 +332,12 @@ input {
     font-size: 0.4em;
 }
 .chTm {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 .container {
-    margin-left: 175px;
-    width: 180px;
+    margin-left: 152px;
+    width: 135px;
     background-color: #ddd;
     border-radius: 30px;
     border: black;
@@ -605,21 +605,21 @@ input {
 }
 #btnTh3 {
     width:135px;
-    margin-left:52px;
+    margin-left:2px;
 }
 #btnTh4 {
     width:135px;
-    margin-left:212px;
+    margin-left:152px;
 }
 #btnTh5 {
     width:135px;
-    margin-left:212px;
+    margin-left:152px;
 }
 #txt1 {
-    margin-left:20px;
+    margin-left:10px;
 }
 #txt2 {
-    margin-left:20px;
+    margin-left:10px;
 }
 .header2 {
     border-top-left-radius: 20px;
