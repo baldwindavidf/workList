@@ -332,8 +332,8 @@ input {
     font-size: 0.4em;
 }
 .chTm {
-    margin-left: 3px;
-    margin-right: 3px;
+    margin-left: 2px;
+    margin-right: 0px;
 }
 .container {
     margin-left: 152px;
@@ -598,10 +598,10 @@ input {
 }
 
 #btnTh {
-    width:45px;
+    width:50px;
 }
 #btnTh2 {
-    width:45px;
+    width:50px;
 }
 #btnTh3 {
     width:135px;
